@@ -1,5 +1,7 @@
 
 Sub Update_slides()
+    
+'This subroutine updates all the charts and embedded objects linked to external sources   
 
 Dim pptPresentation As Presentation
 Dim PPTSlide As Slide
@@ -12,7 +14,7 @@ Dim oxl As Excel.Workbook
 Dim xlapp As Excel.Application
 Dim xlsheet As Excel.Worksheet
 
-
+    
 For Each PPTSlide In ActivePresentation.Slides
 
     For Each PPTShape In PPTSlide.Shapes
